@@ -9,7 +9,7 @@ mongoose.connect(mongoURL,{
     // useUnifiedTopology:true
 })
 
-// maintain default connection 
+// maintain default connection dk
 const db = mongoose.connection;
 
 // define event listners
