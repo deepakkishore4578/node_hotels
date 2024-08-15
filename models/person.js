@@ -15,8 +15,14 @@ const personSchema = new mongoose.Schema({
         enum:["chef","waiter","c"],
         // required:true
     },
+    email:{
+        type:String,
+        unique:true
+    },
     mobile:{
         type:String,
+        unique:true
+        
         // required:true
     },
     address:{
@@ -25,6 +31,15 @@ const personSchema = new mongoose.Schema({
     },
     salary:{
         type:Number
+    },
+    username:{
+        unique:true,
+        required:true,
+        type:String
+    },
+    password:{
+        required:true,
+        type:String
     }
 })
 

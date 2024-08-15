@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const person = require('./../models/person');
-router.get('/', async(req, res)=> {  // '/' is endpoint
+router.get('/signup', async(req, res)=> {  // '/' is endpoint
     try{
       const data = await person.find();
        console.log('data saved');
